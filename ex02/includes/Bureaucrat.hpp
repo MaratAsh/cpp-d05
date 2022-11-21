@@ -12,7 +12,7 @@
 #define CYAN    "\x1b[36m"
 #define RESET   "\x1b[0m"
 
-class Form;
+class AForm;
 
 class Bureaucrat
 {
@@ -31,9 +31,9 @@ public:
 
 	void incGrade();
 	void decGrade();
-	void signForm(Form & form);
+	void signForm(AForm & form);
 
-	void executeForm(Form const & form);
+	void executeForm(AForm const & form);
 
 	class GradeTooHighException : public std::exception
 	{

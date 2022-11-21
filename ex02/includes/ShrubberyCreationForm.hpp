@@ -1,10 +1,10 @@
 #ifndef CPP_SHRUBBERYCREATIONFORM_HPP
 #define CPP_SHRUBBERYCREATIONFORM_HPP
 
-#include "Form.hpp"
+#include "AForm.hpp"
 #include <fstream>
 
-class ShrubberyCreationForm : public Form
+class ShrubberyCreationForm : public AForm
 {
 private:
 	std::string _target;

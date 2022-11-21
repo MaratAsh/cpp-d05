@@ -1,5 +1,5 @@
 #include "Bureaucrat.hpp"
-#include "Form.hpp"
+#include "AForm.hpp"
 
 Bureaucrat::Bureaucrat() {}
 
@@ -51,7 +51,7 @@ void Bureaucrat::decGrade()
 		throw Bureaucrat::GradeTooLowException();
 }
 
-void Bureaucrat::signForm(Form & form)
+void Bureaucrat::signForm(AForm & form)
 {
 	try
 	{
@@ -92,7 +92,7 @@ const char *Bureaucrat::GradeTooLowException::what() const throw()
 }
 
 
-void Bureaucrat::executeForm(const Form &form)
+void Bureaucrat::executeForm(const AForm &form)
 {
 	try
 	{

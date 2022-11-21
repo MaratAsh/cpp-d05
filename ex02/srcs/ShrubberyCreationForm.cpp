@@ -1,10 +1,10 @@
 #include "ShrubberyCreationForm.hpp"
 
 ShrubberyCreationForm::ShrubberyCreationForm(std::string target) :
-	Form("shrubbery form", 145, 137), _target(target)
+		AForm("shrubbery form", 145, 137), _target(target)
 {}
 
-ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm & copy) : Form(copy), _target(copy._target)
+ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm & copy) : AForm(copy), _target(copy._target)
 {
 	(*this) = copy;
 }
@@ -15,7 +15,7 @@ ShrubberyCreationForm &  ShrubberyCreationForm::operator= (const ShrubberyCreati
 {
 	if (this == &copy)
 		return (*this);
-	Form::operator=(copy);
+	AForm::operator=(copy);
 	return (*this);
 }
 
@@ -61,7 +61,7 @@ void ShrubberyCreationForm::execute(const Bureaucrat &executor) const
 		fout.close();
 	}
 	else if (!(this->getSign()))
-		throw RED"The Form not signed!"RESET;
+		throw RED"The AForm not signed!"RESET;
 	else
 		throw Bureaucrat::GradeTooLowException();
 }

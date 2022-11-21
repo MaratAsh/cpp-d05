@@ -1,10 +1,10 @@
 #ifndef CPP_ROBOTOMYREQUESTFORM_HPP
 #define CPP_ROBOTOMYREQUESTFORM_HPP
 
-#include "Form.hpp"
+#include "AForm.hpp"
 
 
-class RobotomyRequestForm : public Form
+class RobotomyRequestForm : public AForm
 {
 private:
 	std::string _target;

@@ -39,3 +39,23 @@ add_executable(cpp_05_02
         )
 
 target_include_directories(cpp_05_02 PRIVATE ex02/includes/)
+
+
+add_executable(cpp_05_03
+        ex03/srcs/Bureaucrat.cpp
+        ex03/srcs/AForm.cpp
+        ex03/srcs/main.cpp
+        ex03/srcs/PresidentialPardonForm.cpp
+        ex03/srcs/RobotomyRequestForm.cpp
+        ex03/srcs/ShrubberyCreationForm.cpp
+        ex03/srcs/Intern.cpp
+
+        ex03/includes/Bureaucrat.hpp
+        ex03/includes/AForm.hpp
+        ex03/includes/PresidentialPardonForm.hpp
+        ex03/includes/RobotomyRequestForm.hpp
+        ex03/includes/ShrubberyCreationForm.hpp
+        ex03/includes/Intern.hpp
+        )
+
+target_include_directories(cpp_05_03 PRIVATE ex03/includes/)

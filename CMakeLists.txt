@@ -11,3 +11,14 @@ add_executable(cpp_05_00
         )
 
 target_include_directories(cpp_05_00 PRIVATE ex00/includes/)
+
+add_executable(cpp_05_01
+        ex01/srcs/Bureaucrat.cpp
+        ex01/srcs/Form.cpp
+        ex01/srcs/main.cpp
+
+        ex01/includes/Bureaucrat.hpp
+        ex01/includes/Form.hpp
+        )
+
+target_include_directories(cpp_05_01 PRIVATE ex01/includes/)
